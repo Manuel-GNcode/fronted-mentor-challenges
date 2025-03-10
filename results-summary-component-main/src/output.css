@@ -11,17 +11,10 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-yellow-50: oklch(0.987 0.026 102.212);
     --color-green-50: oklch(0.982 0.018 155.826);
-    --color-emerald-50: oklch(0.979 0.021 166.113);
-    --color-emerald-100: oklch(0.95 0.052 163.051);
-    --color-emerald-600: oklch(0.596 0.145 163.225);
-    --color-emerald-950: oklch(0.262 0.051 172.552);
     --color-blue-50: oklch(0.97 0.014 254.604);
     --color-gray-500: oklch(0.551 0.027 264.364);
-    --color-gray-800: oklch(0.278 0.033 256.848);
     --spacing: 0.25rem;
     --container-2xl: 42rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -386,14 +379,17 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mt-\[-4px\] {
+    margin-top: -4px;
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
-  }
-  .mb-\[-8px\] {
-    margin-bottom: -8px;
   }
   .mb-\[8px\] {
     margin-bottom: 8px;
@@ -1146,9 +1142,6 @@
   .bg-blue-50 {
     background-color: var(--color-blue-50);
   }
-  .bg-emerald-950 {
-    background-color: var(--color-emerald-950);
-  }
   .bg-green-50 {
     background-color: var(--color-green-50);
   }
@@ -1200,11 +1193,6 @@
   .from-Violet-blue {
     --tw-gradient-from: var(--color-Violet-blue);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .via-Light-slate-blue {
-    --tw-gradient-via: var(--color-Light-slate-blue);
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
   .to-Light-royal-blue {
     --tw-gradient-to: var(--color-Light-royal-blue);
@@ -1371,17 +1359,11 @@
   .px-11 {
     padding-inline: calc(var(--spacing) * 11);
   }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
-  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -1445,10 +1427,6 @@
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -1556,29 +1534,14 @@
   .text-Light-royal-blue {
     color: var(--color-Light-royal-blue);
   }
-  .text-Light-slate-blue {
-    color: var(--color-Light-slate-blue);
-  }
   .text-Orangey-yellow {
     color: var(--color-Orangey-yellow);
   }
   .text-Pale-blue {
     color: var(--color-Pale-blue);
   }
-  .text-emerald-50 {
-    color: var(--color-emerald-50);
-  }
-  .text-emerald-100 {
-    color: var(--color-emerald-100);
-  }
-  .text-emerald-600 {
-    color: var(--color-emerald-600);
-  }
   .text-gray-500 {
     color: var(--color-gray-500);
-  }
-  .text-gray-800 {
-    color: var(--color-gray-800);
   }
   .capitalize {
     text-transform: capitalize;
@@ -1859,14 +1822,6 @@
   }
   .transition-normal {
     transition-behavior: normal;
-  }
-  .duration-300 {
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-  }
-  .duration-900 {
-    --tw-duration: 900ms;
-    transition-duration: 900ms;
   }
   .ease-in {
     --tw-ease: var(--ease-in);
@@ -2387,10 +2342,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -2408,6 +2359,10 @@
   inherits: false;
 }
 @property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
