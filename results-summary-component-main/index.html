@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <main class="w-sm mx-auto rounded-4xl flex flex-col gap-4 text-sm md:w-2xl md:flex-row md:mt-20 md:shadow-lg">
+      <section class="bg-emerald-600 text-emerald-50 py-5 px-12 text-center rounded-br-4xl rounded-bl-4xl flex-1 md:rounded-4xl md:py-10 md:flex md:flex-col md:gap-4">
+        <p class="text-emerald-100">Your Result</p>
+        <div class="size-30 bg-linear-to-b from-emerald-800 to-emerald-600 rounded-full flex flex-col justify-center gap-2 mx-auto my-4">
+          <p class="text-5xl font-bold">76</p>
+          <p class="text-emerald-100">of 100</p>
+        </div>
+        <h2 class="font-bold text-xl mb-[-8px]">Great</h2>
+
+        <p class="text-emerald-100">You scored higher than 65% of the people who
+        have taken these tests.</p>
+      </section>
+
+      <section class="px-6 flex-1 flex flex-col justify-center">
+        <h1 class="font-bold mb-2 text-base">Summary</h1>
+        <div class="bg-red-50 rounded-xl mb-3 py-2 px-4 flex justify-between">
+          <h3 class="font-bold text-red-500">Reaction</h3>
+          <p class="text-gray-500"><b class="text-gray-800">80</b> / 100</p>
+        </div>
+        <div class="bg-yellow-50 mb-3 py-2 px-4 flex justify-between">
+          <h3 class="font-bold text-yellow-500">Memory</h3>
+          <p><b>92</b> / 100</p>
+        </div>
+        <div class="bg-green-50 mb-3 py-2 px-4 flex justify-between">
+          <h3 class="font-bold text-green-500">Verbal</h3>
+          <p><b>61</b> / 100</p>
+        </div>
+        <div class="bg-blue-50 mb-3 py-2 px-4 flex justify-between">
+          <h3 class="font-bold text-blue-500">Visual</h3>
+          <p><b>72</b> / 100</p>
+        </div>
+
+        <button class="bg-emerald-950 py-3 text-emerald-50 font-bold text-base rounded-4xl w-full mt-4">Continue</button>
+      </section>
+    </main>
+
+    <footer class="text-[11px] text-center mt-6">
+      Challenge by
+      <a class="text-emerald-600" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="text-emerald-600" href="#">GNcode</a>.
+    </footer>
+  </body>
+</html>
