@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-Light-Cyan: hsl(193, 38%, 86%);
+  --color-Neon-Green: hsl(150, 100%, 66%);
+  --color-Grayish-Blue: hsl(217, 19%, 38%);
+  --color-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --color-Dark-Blue: hsl(218, 23%, 16%);
+
+  --font-manrope: "Manrope", sans-serif;
+
+  --shadow-light-neon: 0 0 20px hsl(150, 100%, 66%);
+}
