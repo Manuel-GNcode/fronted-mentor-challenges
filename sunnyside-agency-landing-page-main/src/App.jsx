@@ -51,6 +51,28 @@ function App() {
           Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
         </Client>
       </section>
+
+      <section className="flex flex-wrap mt-12">
+        <img className="w-[50%]" src="mobile/image-gallery-milkbottles.jpg" alt="milkbottles" />
+        <img className="w-[50%]" src="mobile/image-gallery-orange.jpg" alt="orange"/>
+        <img className="w-[50%]" src="mobile/image-gallery-cone.jpg" alt="icecream"/>
+        <img className="w-[50%]" src="mobile/image-gallery-sugar-cubes.jpg" alt="sugar"/>
+      </section>
+
+      <footer className="bg-emerald-200 py-12 px-7 text-Dark-desaturated-cyan">
+        <h3 className="font-extrabold text-3xl text-center">sunnyside</h3>
+        <div className="font-barlow mt-6 flex justify-center gap-6">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+        <div className="mt-12 flex justify-center gap-6">
+          <a><img src="icon-facebook.svg" alt="facebook" /></a>
+          <a><img src="icon-instagram.svg" alt="instagram" /></a>
+          <a><img src="icon-twitter.svg" alt="twitter" /></a>
+          <a><img src="icon-pinterest.svg" alt="pinterest" /></a>
+        </div>
+      </footer>
     </main>
     </>
   )
