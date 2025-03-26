@@ -1,5 +1,6 @@
 import Section from "./components/Section";
 import SectionAll from "./components/SectionAll";
+import Client from "./components/Client";
 
 function App() {
 
@@ -34,6 +35,22 @@ function App() {
       <SectionAll title='Photography' bgUrl='mobile/image-orange.jpg'>
         Increase your credibility by getting the most stunning, high-quality photos that improve your business image. 
       </SectionAll>
+
+      <section>
+        <h2 className="font-fraunces text-center pt-12 text-xl font-[700] tracking-widest text-Grayish-blue">CLIENT TESTIMONIALS</h2>
+
+        <Client imgUrl="image-emily.jpg" name="Emily R." job="Marketing Director">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </Client>
+
+        <Client imgUrl="image-thomas.jpg" name="Thomas S." job="Chief Operating Officer">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </Client>
+
+        <Client imgUrl="image-jennie.jpg" name="Jennie F." job="Business Owner">
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </Client>
+      </section>
     </main>
     </>
   )
