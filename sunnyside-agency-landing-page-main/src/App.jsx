@@ -1,4 +1,5 @@
-import Section from "./components/Section"
+import Section from "./components/Section";
+import SectionAll from "./components/SectionAll";
 
 function App() {
 
@@ -26,13 +27,13 @@ function App() {
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
       </Section>
 
-      <Section title='Graphic design' imgUrl='mobile/image-graphic-design.jpg'>
+      <SectionAll title='Graphic design' bgUrl='mobile/image-graphic-design.jpg'>
         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention. 
-      </Section>
+      </SectionAll>
 
-      <Section title='Photography' imgUrl='mobile/image-photography.jpg'>
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-      </Section>
+      <SectionAll title='Photography' bgUrl='mobile/image-orange.jpg'>
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image. 
+      </SectionAll>
     </main>
     </>
   )
