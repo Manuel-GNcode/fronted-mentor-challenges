@@ -1,16 +1,21 @@
 import Section from "./components/Section";
 import SectionAll from "./components/SectionAll";
 import Client from "./components/Client";
+import { Menu } from "./components/Menu";
+import { useState } from "react";
 
 function App() {
+  const [menu, setMenu] = useState(false);
 
   return (
     <>
     <header className="flex justify-between mt-8 px-8 absolute w-full">
       <img src="logo.svg" alt="logo" />
-      <button className="cursor-pointer">
+      <button onClick={()=>setMenu(!menu)} className="cursor-pointer">
         <img src="icon-hamburger.svg" alt="hamburger" />
       </button>
+
+      {menu && <Menu></Menu>}
     </header>
 
     <main>
