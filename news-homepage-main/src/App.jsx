@@ -1,13 +1,19 @@
+import { useState } from "react"
+import Menu from "./components/Menu"
 import { Technology } from "./components/technology"
 
 function App() {
+  const [menu, setMenu] = useState(false);
 
   return (
     <>
-      <nav className="flex justify-between mb-8">
+      <nav className="flex justify-between mb-8 relative">
         <img src="src/assets/logo.svg" alt="Logo" />
-        <button className="cursor-pointer lg:hidden" aria-label="boton de menu">
+        <button onClick={()=>setMenu(!menu)} className="cursor-pointer lg:hidden" aria-label="boton de menu">
+          {menu ?
+          <img src="src/assets/icon-menu-close.svg" alt="Burger menu" />:
           <img src="src/assets/icon-menu.svg" alt="Burger menu" />
+          }
         </button>
         <div className="hidden lg:flex gap-6 text-Dark-grayish-blue items-center">
           <a className="hover:text-Soft-red" href="#">Home</a>
@@ -16,6 +22,8 @@ function App() {
           <a className="hover:text-Soft-red" href="#">Trending</a>
           <a className="hover:text-Soft-red" href="#">Categories</a>
         </div>
+
+        <Menu isOpen={menu}></Menu>
       </nav>
 
       <div className="flex flex-col gap-6 lg:flex-row mb-16">
