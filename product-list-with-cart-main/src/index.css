@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'RedHatText';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/RedHatText-VariableFont_wght.ttf');
+}
+
+@theme {
+  --color-cart-Red: hsl(14, 86%, 42%);
+  --color-cart-Green: hsl(159, 69%, 38%);
+
+  --color-cart-Rose-50: hsl(20, 50%, 98%);
+  --color-cart-Rose-100: hsl(13, 31%, 94%);
+  --color-cart-Rose-300: hsl(14, 25%, 72%);
+  --color-cart-Rose-400: hsl(7, 20%, 60%);
+  --color-cart-Rose-500: hsl(12, 20%, 44%);
+  --color-cart-Rose-900: hsl(14, 65%, 9%);
+
+  --font-cart-redhattext: 'RedHatText', 'sans-serif';
+}
