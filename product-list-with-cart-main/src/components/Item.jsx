@@ -11,7 +11,7 @@ export const Item = ({urlImg, category, name, price}) => {
   }
 
   return (
-    <div>
+    <div className="">
       <div className="relative mb-8">
         <img className="rounded-2xl" src={urlImg} alt={name} />
         {
