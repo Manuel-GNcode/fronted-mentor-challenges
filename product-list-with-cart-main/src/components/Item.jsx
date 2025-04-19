@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Item = ({urlImg, category, name, price, handleAdd, handleIncrease, handleDecrease}) => {
+export const Item = ({urlImg, category, name, price, handleAdd, handleRemove, handleIncrease, handleDecrease}) => {
   const [quantity, setQuantity] = useState(0);
 
   const onClickAdd = ()=>{
@@ -12,10 +12,13 @@ export const Item = ({urlImg, category, name, price, handleAdd, handleIncrease, 
     handleIncrease();
   }
   const onClickDecrement = ()=>{
-    if (quantity > 0) {
+    if (quantity > 1) {
       setQuantity(quantity-1);
       handleDecrease();
-    };
+    } else {
+      setQuantity(0);
+      handleRemove();
+    }
   }
 
   return (

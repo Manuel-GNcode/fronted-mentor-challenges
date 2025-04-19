@@ -18,11 +18,10 @@ function App() {
   
   const handleAdd = (product)=>{
     product.quantity = 1;
-    product.added = true;
     addItemCart(product);
   }
   const handleRemove = (product)=>{
-    product.added = false;
+    product.quantity = 0;
     removeItemCart(product)
   }
 
@@ -36,6 +35,7 @@ function App() {
               <Item 
               key={item.id} 
               handleAdd={()=>handleAdd(item)} 
+              handleRemove={()=>handleRemove(item)}
               handleIncrease={()=>increaseItemCart(item.id)}
               handleDecrease={()=>decreaseItemCart(item.id)}
               urlImg={getImageUrl(item)} 
