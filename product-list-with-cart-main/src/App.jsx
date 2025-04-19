@@ -33,7 +33,9 @@ function App() {
           {
             foodBase.map(item => (
               <Item 
-              key={item.id} 
+              key={item.id}
+              itemState={cartState}
+              itemId={item.id}
               handleAdd={()=>handleAdd(item)} 
               handleRemove={()=>handleRemove(item)}
               handleIncrease={()=>increaseItemCart(item.id)}

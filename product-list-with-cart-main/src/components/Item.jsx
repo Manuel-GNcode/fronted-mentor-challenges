@@ -1,7 +1,17 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-export const Item = ({urlImg, category, name, price, handleAdd, handleRemove, handleIncrease, handleDecrease}) => {
+export const Item = ({itemId, itemState, urlImg, category, name, price, handleAdd, handleRemove, handleIncrease, handleDecrease}) => {
   const [quantity, setQuantity] = useState(0);
+
+  const checkExists = (list, id)=>{
+    return list.some(obj=>obj.id == id);
+  }
+
+  useEffect(()=>{
+    if (!checkExists(itemState, itemId)) {
+      setQuantity(0);
+    }
+  }, [itemState, itemId]);
 
   const onClickAdd = ()=>{
     setQuantity(quantity+1);
